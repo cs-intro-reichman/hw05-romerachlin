@@ -131,9 +131,9 @@ public class GameOfLife {
 	
 	// Prints the board. Alive and dead cells are printed as 1 and 0, respectively.
     public static void print(int[][] arr) {
-		for (int row = 0; row<arr.length ; row++){
-			for(int col = 0; col<arr[row].length; col++){
-				System.out.print(arr[row][col]+" ");
+		for (int row = 1; row<arr.length-1; row++){
+			for(int col = 1; col<arr[row].length-1; col++){
+				System.out.printf("%3s", arr[row][col]);
 			}
 			System.out.println();
 		}
