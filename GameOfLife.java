@@ -15,7 +15,7 @@ public class GameOfLife {
 		//// test2(fileName);
 		
 		//// test3(fileName, 3);
-		play("pulsar.dat");
+		play("line.dat");
 	 }
 	
 	// Reads the data file and prints the initial board.
@@ -133,7 +133,7 @@ public class GameOfLife {
     public static void print(int[][] arr) {
 		for (int row = 0; row<arr.length ; row++){
 			for(int col = 0; col<arr[row].length; col++){
-				System.out.printf("%2s", arr[row][col]);
+				System.out.print(arr[row][col]+" ");
 			}
 			System.out.println();
 		}
